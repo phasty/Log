@@ -1,5 +1,5 @@
 <?php
-namespace Daem\Log {
+namespace Phasty\Log {
     abstract class Log {
     }
 }

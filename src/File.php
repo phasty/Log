@@ -1,5 +1,5 @@
 <?php
-namespace Daem\Log {
+namespace Phasty\Log {
     class File {
         static protected $colors = [
             "clear"   => "0",
