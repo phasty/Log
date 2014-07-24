@@ -1,5 +1,5 @@
 {
-    "name" : "phasty/Log",
+    "name" : "phasty/log",
     "description" : "PHP log library",
     "keywords" : ["phasty", "php", "log", "logging"],
     "authors" : [
