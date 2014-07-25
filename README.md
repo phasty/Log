@@ -41,6 +41,7 @@ Moreover, by default each log line header is highlighted in file according to it
 USAGE
 -----
 
+```php
     use Phasty\Log\File as log;
 
     log::debug("This is debug message");
@@ -49,6 +50,7 @@ USAGE
     log::success("This is success message");
     log::warning("This is warning message");
     log::error("This is error message");
+```
 
 Configuration
 -------------
