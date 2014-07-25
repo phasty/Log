@@ -36,3 +36,35 @@ Log message may be spaced from log header by special spacer, default is "+-". Fo
 Moreover, by default each log line header is highlighted in file according to it's logging level:
 
 ![](https://cloud.githubusercontent.com/assets/2020598/3697733/7a448b76-13af-11e4-945f-08f48d5d65fc.png)
+
+
+USAGE
+-----
+
+    use Phasty\Log\File as log;
+
+    log::debug("This is debug message");
+    log::info("This is info message");
+    log::notice("This is notice message");
+    log::success("This is success message");
+    log::warning("This is warning message");
+    log::error("This is error message");
+
+Configuration
+-------------
+
+config/log.php:
+    <?php
+    return [
+        "spacer" => "+-----",
+        "header" => [
+            "color" => "brown"
+        ],
+        "name" => "queue"
+    ];
+
+using:
+
+    use Phasty\Log\File as log;
+    log::config(require "config/log.php");
+    log::info("log message");
