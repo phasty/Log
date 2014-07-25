@@ -42,14 +42,14 @@ USAGE
 -----
 
 ```php
-    use Phasty\Log\File as log;
+use Phasty\Log\File as log;
 
-    log::debug("This is debug message");
-    log::info("This is info message");
-    log::notice("This is notice message");
-    log::success("This is success message");
-    log::warning("This is warning message");
-    log::error("This is error message");
+log::debug("This is debug message");
+log::info("This is info message");
+log::notice("This is notice message");
+log::success("This is success message");
+log::warning("This is warning message");
+log::error("This is error message");
 ```
 
 Configuration
@@ -57,17 +57,21 @@ Configuration
 
 config/log.php:
 
-    <?php
-    return [
-        "spacer" => "+-----",
-        "header" => [
-            "color" => "brown"
-        ],
-        "name" => "queue"
-    ];
+```php
+<?php
+return [
+    "spacer" => "+-----",
+    "header" => [
+        "color" => "brown"
+    ],
+    "name" => "queue"
+];
+```
 
 using:
 
-    use Phasty\Log\File as log;
-    log::config(require "config/log.php");
-    log::info("log message");
+```php
+use Phasty\Log\File as log;
+log::config(require "config/log.php");
+log::info("log message");
+```
