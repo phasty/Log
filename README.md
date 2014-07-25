@@ -62,7 +62,8 @@ config/log.php:
 return [
     "spacer" => "+-----",
     "header" => [
-        "color" => "brown"
+        "color"  => "brown",
+        "format" => "[^PID, %H:%i:%s.^MCT]"
     ],
     "name" => "queue"
 ];
