@@ -54,6 +54,7 @@ Configuration
 -------------
 
 config/log.php:
+
     <?php
     return [
         "spacer" => "+-----",
